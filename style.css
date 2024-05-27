@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: bisque;
+  
+}
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.grid-container {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 0;
+}
+.paint-div {
+  background-color: black;
+}
+button{
+    display: block;
+    margin: 15px auto;
+    font-size: 15px;
+    padding: 10px 18px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover{
+    background-color: chartreuse;
+}
