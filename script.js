@@ -1,7 +1,7 @@
 const grid = document.querySelector(".grid-container");
 const changeBtn = document.querySelector("#changeBtn");
 const clearBtn = document.querySelector("#clearBtn");
-let size = 0;
+let size = 100;
 
 const drawGrid = (size) => {
   grid.innerHTML = "";
@@ -19,12 +19,12 @@ const drawGrid = (size) => {
   }
 };
 
-drawGrid(100);
+drawGrid(size);
 
 changeBtn.addEventListener("click", () => {
   size = prompt("change size");
   drawGrid(size);
 });
 clearBtn.addEventListener("click", () => {
-  drawGrid(100);
+  drawGrid(size);
 });
